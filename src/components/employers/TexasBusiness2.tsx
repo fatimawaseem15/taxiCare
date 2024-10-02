@@ -2,32 +2,33 @@
 import React from "react";
 
 const TexasBusinessSection: React.FC = () => {
-    return (
-        <section
-            className="relative w-full h-[606px] bg-cover bg-center flex md:items-end items-center justify-center"
-            style={{
-                backgroundImage:
-                    "url('https://www.texicare.com/wp-content/uploads/2024/02/Moving-Product-with-a-Forklift.jpg')",
-                backgroundSize: 'cover', // Ensure the background covers the entire width
-                backgroundPosition: 'center', // Centers the image
-            }}
-        >
-            {/* Overlay */}
-            <div className="absolute inset-0 bg-black opacity-10"></div>
-
-            {/* Content */}
-            <div className="relative z-10 text-center text-white md:px-0 px-4 ">
-                <h2 className="md:text-[75px] text-5xl md:leading-[75px] text-left">
-                    We know Texas. <br /> We know Texas small business.
-                </h2>
-                <p className="md:mt-14 mt-10 md:mb-20 md:text-[22px] md:leading-[33px] text-xl text-left ">
-                    Texicare was created by seasoned healthcare <br /> professionals with a deep
-                    commitment to our state. <br />
-                    We&apos;re a new company with big ambitions for Texas <br /> small business.
-                </p>
-            </div>
-        </section>
-    );
+  return (
+    <div className="relative">
+    <section className=" relative w-full bg-cover bg-center flex flex-col md:flex-row items-center justify-center ">
+      {/* Background Image */}
+      <div
+        className="h-[306px] md:h-[606px] w-full bg-cover bg-center"
+        style={{
+          backgroundImage:
+            "url('https://www.texicare.com/wp-content/uploads/2024/02/Moving-Product-with-a-Forklift.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      />
+      {/* Content */}
+      <div className="container w-full relative z-10 pl-4 flex flex-col justify-center h-full md:absolute md:top-8 md:left-0 md:h-full px-2 md:p-24">
+        <h2 className="mt-12 font-extrabold text-[48px] leading-[1] md:text-[75px] md:leading-[75px] text-left text-[#001748] md:text-white md:mt-0 md:mb-0 ">
+          We know Texas. <br /> We know Texas small business.
+        </h2>
+        <p className="mt-6 mb-24  md:mt-14 text-2xl md:text-[22px] md:leading-[33px] leading-relaxed text-left text-[#3B3B3B] md:text-white  ">
+          Texicare was created by seasoned healthcare <br className="hidden md:block" /> professionals with a deep
+          commitment to our state. <br className="hidden md:block" />
+          We&apos;re a new company with big ambitions for Texas <br className="hidden md:block" /> small business.
+        </p>
+      </div>
+    </section>
+    </div>
+  );
 };
 
 export default TexasBusinessSection;

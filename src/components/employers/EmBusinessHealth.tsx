@@ -4,7 +4,7 @@ import React from 'react';
 const EmBusinessHealth = () => {
     return (
         <section>
-            <div className="relative bg-cover bg-center md:py-32 py-24" style={{ backgroundImage: `url('https://www.texicare.com/wp-content/uploads/2024/02/Shop-with-Open-Sign.jpg')`,
+            <div className="relative bg-cover bg-center p-8 md:py-32 " style={{ backgroundImage: `url('https://www.texicare.com/wp-content/uploads/2024/02/Shop-with-Open-Sign.jpg')`,
                  backgroundSize: 'cover', // Use 'cover' for large screens
                  backgroundRepeat: 'no-repeat', // Prevents repeating the background image
                  backgroundPosition: 'center', // Centers the background image
@@ -16,7 +16,7 @@ const EmBusinessHealth = () => {
                 <div className="relative z-10 max-w-screen-lg mx-auto px-3">
                     <div className="flex justify-start">
                         <div className="w-full md:w-6/12">
-                            <h3 className="text-white font-bold md:text-[53px] md:leading-[53px] text-4xl text-left mb-6 font-avenir-bold">
+                            <h3 className="text-white font-bold text-[53px] leading-[53px]  text-4xl text-left mb-6 font-avenir-bold">
                                 Good health is just good business.
                             </h3>
                         </div>

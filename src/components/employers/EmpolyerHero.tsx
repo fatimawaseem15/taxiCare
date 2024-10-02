@@ -4,7 +4,7 @@ const EmployerHero = () => {
   return (
     <>
       <div
-        className="relative w-full h-full bg-cover bg-center transition-all -mt-4"
+        className="relative w-full h-[250px] bg-cover bg-center transition-all -mt-4 md:h-full lg:h-full"
         style={{
           backgroundImage:
             'url("https://www.texicare.com/wp-content/uploads/2024/02/Warehouse-Birds-Eye-View.jpg")',
@@ -16,7 +16,7 @@ const EmployerHero = () => {
         <div className="container mx-auto lg:px-28 md:px-20 py-20 md:py-8 m-4"> {/* Adjusted padding */}
           {/* Desktop View */}
           <div className="text-center text-white px-4 lg:px-10 py-12 md:py-20 hidden md:block space-y-8"> {/* Adjusted padding */}
-            <h1 className="text-5xl md:text-[75px] md:leading-[75px] font-[600]">
+            <h1 className="text-[48px] md:text-[75px] md:leading-[75px] font-[600]">
               Your business is only as healthy as the people in it.
             </h1>
             <button
@@ -25,7 +25,7 @@ const EmployerHero = () => {
             >
               Find an Agent
             </button>
-            <p className="text-[22px] leading-[33px] mb-6">
+            <p className="text-[22px] leading-[33px] mb-6 ">
               Sick days and loss of productivity can affect your bottom line. Get in touch with an agent to find healthcare coverage that helps you take care of your employees and your business.
             </p>
           </div>
@@ -33,7 +33,7 @@ const EmployerHero = () => {
       </div>
 
       {/* Mobile View */}
-      <div className="text-center text-white px-10 md:px-5 mt-10 mb-10 md:py-20 block md:hidden space-y-6"> {/* Adjusted margins */}
+      <div className="text-center text-white px-10 md:px-5 mt-10 mb-10 md:py-20 block md:hidden space-y-4"> {/* Adjusted margins */}
         <h1 className="text-4xl md:text-[75px] md:leading-[75px] font-[600] text-[#001748] text-left font-avenir-bold">
           Your business is only as healthy as the people in it.
         </h1>
